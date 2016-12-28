@@ -36,5 +36,12 @@ public class UserController {
         return userDto;
     }
 
+    @RequestMapping(value = "/users/hello", method = RequestMethod.GET)
+    public String hello() {
+
+        System.out.print("hello gaojunqi");
+
+        return "hello";
+    }
 
 }

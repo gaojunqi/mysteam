@@ -1,0 +1,30 @@
+server:
+  port: 5555
+spring:
+  application:
+    name: gateway
+
+zuul:
+  routes:
+    user:
+      path: /users/**
+      stripPrefix: false
+    order:
+      path: /orders/**
+  debug:
+    request: true
+    response: true
+ribbon:
+  eureka:
+    enabled: true
+
+eureka:
+  instance:
+    preferIpAddress: true
+    leaseRenewalIntervalInSeconds: 10
+    statusPageUrlPath: /admin/info
+    healthCheckUrlPath: /admin/health
+
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
