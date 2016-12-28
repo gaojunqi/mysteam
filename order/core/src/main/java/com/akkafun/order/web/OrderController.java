@@ -27,7 +27,8 @@ public class OrderController {
     @RequestMapping(value = PLACE_ORDER, method = RequestMethod.POST)
     public OrderDto placeOrder(@Valid @RequestBody PlaceOrderDto placeOrderDto) {
 
-        Order order = orderService.placeOrder(placeOrderDto);
+        Order order = orderService.placeOrder(
+                placeOrderDto);
 
         return OrderUtils.convertToDto(order);
     }
