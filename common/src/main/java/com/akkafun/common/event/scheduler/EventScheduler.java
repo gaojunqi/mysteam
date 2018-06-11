@@ -10,7 +10,6 @@ import org.springframework.scheduling.annotation.Scheduled;
 public class EventScheduler{
 
     EventBus eventBus;
-
     public EventScheduler(EventBus eventBus) {
         this.eventBus = eventBus;
     }

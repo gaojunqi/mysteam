@@ -1,14 +1,13 @@
 package com.akkafun.common.domain;
 
-import javax.persistence.Column;
-import javax.persistence.MappedSuperclass;
-import javax.persistence.Version;
+import javax.persistence.*;
 
 /**
  * Created by liubin on 2016/3/28.
  */
 @MappedSuperclass
 public abstract class LockableEntity {
+
 
     @Version
     @Column(name = "optlock", columnDefinition = "integer DEFAULT 0", nullable = false)

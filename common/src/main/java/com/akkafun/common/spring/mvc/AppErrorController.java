@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Created by liubin on 2016/5/3.
+ *
  */
 @Controller
 @RequestMapping("${server.error.path:${error.path:/error}}")
