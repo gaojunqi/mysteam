@@ -60,6 +60,7 @@ public class UserService {
 
         userRepository.save(user);
 
+
         //用户创建事件
         eventBus.publish(new UserCreated(user.getId(), user.getUsername(), user.getCreateTime()));
 

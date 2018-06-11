@@ -6,7 +6,8 @@ import javax.persistence.*;
 
 /**
  * Created by liubin on 2016/3/28.
- */
+*/
+
 @Entity
 @Table(name = "user")
 public class User extends VersionEntity {

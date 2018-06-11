@@ -4,7 +4,7 @@ import com.akkafun.base.api.CommonErrorCode;
 import com.akkafun.base.api.ErrorCode;
 
 /**
- * Created by liubin on 2016/5/3.
+ *
  */
 public class AppBusinessException extends BaseException {
 

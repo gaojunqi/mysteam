@@ -1,5 +1,7 @@
 package com.akkafun.user.dao;
 
+import com.akkafun.user.domain.User;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.HashMap;
@@ -18,7 +20,6 @@ public class UserRepositoryImpl implements UserRepositoryCustom {
 
     @Override
     public boolean isUsernameExist(String username, Optional<Integer> userId) {
-
         String hql = "select u.id from User u where u.username = :username";
         Map<String, Object> params = new HashMap<>();
         params.put("username", username);

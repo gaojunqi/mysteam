@@ -19,7 +19,6 @@ public class RegisterDto {
     @Size(min = 4, max = 20, message = "密码长度需要为4-20位")
     private String password;
 
-
     public String getUsername() {
         return username;
     }
@@ -35,4 +34,5 @@ public class RegisterDto {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }

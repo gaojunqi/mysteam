@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 /**
- * Created by liubin on 2016/8/25.
+ * Created
  */
 @FeignClient(CouponUrl.SERVICE_HOSTNAME)
 public interface CouponClient {
